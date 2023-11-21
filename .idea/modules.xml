@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/qa_guru_python_5_15.iml" filepath="$PROJECT_DIR$/.idea/qa_guru_python_5_15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/parametrized.iml" filepath="$PROJECT_DIR$/.idea/parametrized.iml" />
     </modules>
   </component>
 </project>
