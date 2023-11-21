@@ -25,12 +25,12 @@ def browser_scale(request):
         browser.open('https://github.com')
 
 
-@pytest.mark.parametrize('browser_scale', ["desktop_1"], indirect=True)
+@pytest.mark.parametrize('browser_scale', ["desktop_2"], indirect=True)
 def test_open_github_parametrized_desktop(browser_scale):
     browser.element("//a[@href='/login']").click()
 
 
-@pytest.mark.parametrize('browser_scale', ["mobile_2"], indirect=True)
+@pytest.mark.parametrize('browser_scale', ["mobile_1"], indirect=True)
 def test_open_github_parametrized_mobile(browser_scale):
     browser.element("//button[@aria-label='Toggle navigation' and @data-view-component='true']").click()
     browser.element("//a[@href='/login']").click()
