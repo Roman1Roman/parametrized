@@ -21,6 +21,8 @@ def browser_mobile():
     browser.config.window_width = 1000
     browser.config.window_height = 2532
     browser.open('https://github.com')
+    yield
+    browser.quit()
 
 
 def test_github_desktop(browser_mobile):
@@ -28,5 +30,5 @@ def test_github_desktop(browser_mobile):
     browser.element("//a[@href='/login']").click()
 
 
-def test_github_mobile():
+def test_github_mobile(browser_desktop):
     browser.element("//a[@href='/login']").click()

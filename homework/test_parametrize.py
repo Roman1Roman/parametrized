@@ -1,8 +1,8 @@
 """
 Переопределите параметр с помощью indirect параметризации на уровне теста
 """
-from selene.support.shared import browser
 import pytest
+from selene.support.shared import browser
 
 
 @pytest.fixture(params=['desktop_1', 'mobile_1', 'desktop_2', 'mobile_2'])
